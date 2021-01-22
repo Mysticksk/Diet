@@ -1,0 +1,26 @@
+.intro{
+    
+    &__about{
+        margin: 2em;
+        color: #727272;
+    }
+    &__title{
+        line-height: 1;
+        font-size: 2.5em;
+        padding-bottom: .4em;
+        margin-bottom: .4em;
+        border-bottom:2px solid $primary-color ;
+        color: #333333;
+    }
+    &__more-info{
+        display: none;
+    }
+    &__more-info-text{
+        margin-bottom: 1.5em;
+    }
+    &__img{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+    }
+}

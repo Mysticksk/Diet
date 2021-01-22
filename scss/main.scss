@@ -1,0 +1,48 @@
+@import "variables";
+@import "navigation";
+@import "intro";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+.btn{
+    background-color: $primary-color;
+    color: #fff;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid $primary-color;
+        &:hover{
+        
+        background-color: #fff;
+        color: $primary-color;
+        transition:.4s;
+    }
+}
+
+.fa-check{
+    color: $primary-color;
+}
+.mgb-1{
+    margin-bottom: 1em;
+}
+.mgb-1-5{
+    margin-bottom: 1.5em;
+}

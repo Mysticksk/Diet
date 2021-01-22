@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+.hamburger {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+  position: fixed;
+}
+
+.hamburger:focus > .hamburger__container {
+  -webkit-box-shadow: 0 0 2px 2px;
+          box-shadow: 0 0 2px 2px;
+}
+
+.hamburger__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 35px;
+  height: 30px;
+  -webkit-transition: -webkit-transform .4s ease-in;
+  transition: -webkit-transform .4s ease-in;
+  transition: transform .4s ease-in;
+  transition: transform .4s ease-in, -webkit-transform .4s ease-in;
+}
+
+.hamburger__bars {
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: #000;
+  -webkit-transition: -webkit-transform 220ms ease-in-out;
+  transition: -webkit-transform 220ms ease-in-out;
+  transition: transform 220ms ease-in-out;
+  transition: transform 220ms ease-in-out, -webkit-transform 220ms ease-in-out;
+}
+
+.hamburger__bars::before, .hamburger__bars::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: #000;
+}
+
+.hamburger__bars::before {
+  top: -12px;
+  -webkit-transition: top 100ms 250ms ease-in, -webkit-transform 220ms ease-in-out;
+  transition: top 100ms 250ms ease-in, -webkit-transform 220ms ease-in-out;
+  transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+  transition: top 100ms 250ms ease-in, transform 220ms ease-in-out, -webkit-transform 220ms ease-in-out;
+}
+
+.hamburger__bars::after {
+  bottom: -12px;
+  -webkit-transition: bottom 100ms 250ms ease-in, -webkit-transform 220ms ease-in-out;
+  transition: bottom 100ms 250ms ease-in, -webkit-transform 220ms ease-in-out;
+  transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
+  transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out, -webkit-transform 220ms ease-in-out;
+}
+
+.hamburger--active .hamburger__bars {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition: -webkit-transform 220ms 120ms ease-in-out;
+  transition: -webkit-transform 220ms 120ms ease-in-out;
+  transition: transform 220ms 120ms ease-in-out;
+  transition: transform 220ms 120ms ease-in-out, -webkit-transform 220ms 120ms ease-in-out;
+}
+
+.hamburger--active .hamburger__bars::before {
+  top: 0;
+  -webkit-transition: top 100ms ease-out;
+  transition: top 100ms ease-out;
+}
+
+.hamburger--active .hamburger__bars::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: bottom 100ms ease-out, -webkit-transform 220ms 120ms ease-in-out;
+  transition: bottom 100ms ease-out, -webkit-transform 220ms 120ms ease-in-out;
+  transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
+  transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out, -webkit-transform 220ms 120ms ease-in-out;
+}
+
+.hamburger:focus, .hamburger__container:focus {
+  outline: none;
+}
+
+.nav {
+  position: absolute;
+  line-height: 12vh;
+  text-align: center;
+  font-weight: 700;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  -webkit-transform: translateY(-110vh);
+          transform: translateY(-110vh);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  z-index: 99;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.slider {
+  -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh);
+}
+
+.intro__about {
+  margin: 2em;
+  color: #727272;
+}
+
+.intro__title {
+  line-height: 1;
+  font-size: 2.5em;
+  padding-bottom: .4em;
+  margin-bottom: .4em;
+  border-bottom: 2px solid #009DE0;
+  color: #333333;
+}
+
+.intro__more-info {
+  display: none;
+}
+
+.intro__more-info-text {
+  margin-bottom: 1.5em;
+}
+
+.intro__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  background-color: #009DE0;
+  color: #fff;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  border: 1px solid #009DE0;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #009DE0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.fa-check {
+  color: #009DE0;
+}
+
+.mgb-1 {
+  margin-bottom: 1em;
+}
+
+.mgb-1-5 {
+  margin-bottom: 1.5em;
+}
+/*# sourceMappingURL=main.css.map */
