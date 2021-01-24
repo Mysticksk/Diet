@@ -26,7 +26,7 @@
     &__bars{
             position: absolute;
             width: 35px;
-            height: 2px;
+            height: 3px;
             background-color: #000;
             transition: transform 220ms ease-in-out;
 
@@ -36,15 +36,15 @@
                 display: block;
                 position: absolute;
                 width: 35px;
-                height: 2px;
+                height: 3px;
                 background-color: #000;
             }
             &::before{
-                top: -12px;
+                top: -6px;
                 transition:  top 100ms 250ms ease-in, transform 220ms ease-in-out;
             }
             &::after{
-                bottom: -12px;
+                bottom: -6px;
                 transition:  bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
             }
         }

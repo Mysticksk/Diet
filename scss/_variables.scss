@@ -1,3 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 // font-family: 'Open Sans', sans-serif;
 $primary-color:#009DE0;
+$secondary-color:#727272;
+@mixin title {
+        line-height: 1;
+        font-size: 2.5em;
+        padding-bottom: .4em;
+        margin-bottom: .4em;
+        border-bottom:2px solid $primary-color ;
+        color: #333333;
+}

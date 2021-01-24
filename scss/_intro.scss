@@ -1,16 +1,11 @@
+
 .intro{
-    
     &__about{
         margin: 2em;
-        color: #727272;
+        color: $secondary-color;
     }
     &__title{
-        line-height: 1;
-        font-size: 2.5em;
-        padding-bottom: .4em;
-        margin-bottom: .4em;
-        border-bottom:2px solid $primary-color ;
-        color: #333333;
+        @include title;
     }
     &__more-info{
         display: none;
@@ -22,5 +17,9 @@
         display: flex;
         justify-content:center ;
         align-items: center;
+        & img{
+            width: 100%;
+        }
     }
 }
+

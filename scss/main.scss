@@ -1,6 +1,7 @@
 @import "variables";
 @import "navigation";
 @import "intro";
+@import "offer";
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@
 body{
     font-family: 'Open Sans', sans-serif
 }
+
 
 a{
     text-decoration: none;
@@ -46,3 +48,5 @@ ul{
 .mgb-1-5{
     margin-bottom: 1.5em;
 }
+
+
