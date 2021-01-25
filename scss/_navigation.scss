@@ -6,7 +6,7 @@
     position: absolute;
     top: 2rem;
     right: 2rem;
-    z-index: 100;
+    z-index: 1000;
     position: fixed;
     
     &:focus{
@@ -49,6 +49,7 @@
             }
         }
 }   
+
 .hamburger--active{
     .hamburger__bars{
         transform: rotate(225deg);
@@ -72,24 +73,74 @@
 
 // Navigation list
 
-.nav{
-    position: absolute;
-    line-height: 12vh;
-    text-align: center;
-    font-weight: 700;
+.sidebar{
+    width: 40rem;
     height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -40rem;
+    background: #fff;
+    transition: right .5s;
+    z-index: 100;
+    font-weight: 700;
     text-transform: uppercase;
-    transform: translateY(-110vh);
-    transition: transform .5s;
-    z-index: 99;
-    background-color: #fff;
-    box-shadow:0 0 2px 2px rgba(0,0,0,0.6);
-}
 
-.slider{
-    transform: translateY(-10vh);
+    .menu{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        &__item{
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        &__link{
+            font-size: 1.5rem;
+            color: #333333;
+            position: relative;
+
+            &::before{
+                content: attr(data-content);
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: $primary-color;
+                width: 0;
+                overflow: hidden;
+                white-space: nowrap;
+                transition: width .3s ease-in-out;
+                
+            }
+            &:hover::before{
+                width: 100%;
+            }
+        }
+    }
+
+    .social-media{
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        i{
+            font-size: 1.2rem;
+            margin: 3rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: #777;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            transition: background-color .3s ;
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+    }
+
 }

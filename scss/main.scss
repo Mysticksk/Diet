@@ -2,16 +2,34 @@
 @import "navigation";
 @import "intro";
 @import "offer";
+@import "opinions";
+@import "contact";
+@import "footer";
+@import "media";
+::-webkit-scrollbar-thumb {
+    background: #009DE0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Open Sans', sans-serif
 }
 
-
+.change{
+    right: 0;
+}
 a{
     text-decoration: none;
     color: #000;
@@ -39,14 +57,22 @@ ul{
     }
 }
 
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before{
+    color: $primary-color !important;
+    transform: scale(2) !important;
+}
+
 .fa-check{
     color: $primary-color;
 }
 .mgb-1{
     margin-bottom: 1em;
 }
+.mgb-05{
+    margin-bottom: .5em;
+}
+
 .mgb-1-5{
     margin-bottom: 1.5em;
 }
-
-

@@ -1,0 +1,71 @@
+.contact{
+    margin: 0 20px 20px;
+    color: #727272;
+    &__header{
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: #333333;
+        border-bottom: 2px solid #009DE0;
+        padding-bottom: 20px;
+        width: 35vw;
+        margin-bottom: 20px;
+    }
+    
+    &__info{
+        font-weight: 300;
+    }
+    &__form-text{
+        font-size: .8rem;
+        max-width: 50%;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        min-height: 500px;
+        padding: 30px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 13px 9px rgba(0, 0, 0, 0.01);
+    }
+
+    &__input,
+    &__textarea{
+        min-height: 50px;
+        width: 90%;
+        border: none;
+        border-bottom: 1px solid #333333;
+        padding: 5px 0;
+        overflow: hidden;
+        outline: #fff;
+        font-size: 1.1rem;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+    }
+    &__label{
+        font-size: .8rem;
+        text-transform: uppercase;
+        margin: 1em 0;
+
+    }
+    &__label--textarea{
+        margin: 2em 0;
+    }
+    &__btn{
+        width: 130px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+
+        & img{
+            width: 90%;
+        }
+
+    }
+}

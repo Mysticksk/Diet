@@ -1,0 +1,98 @@
+@media (orientation:landscape){
+    .intro__img{
+        order: -1;
+    }
+    .offers{
+        padding: 0 20px 20px;
+    }
+    .offers__offer{
+        width: 45%;
+        margin: 20px 0;
+    }
+    .offers__offer--info{
+        width: 96%;
+        margin: 20px auto;
+    }
+    
+    form{
+        width: 70%;
+    }
+    .contact {
+    margin: 0 20px;
+
+    &__form-container{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__img{
+        width: 20%;
+    }
+    }
+}
+
+
+@media (min-width:824px){
+    .intro__img{
+        order: 0;
+    }
+}    
+
+@media (min-width: 1024px) and (orientation: landscape){
+    .intro{
+        display: flex;
+        flex-direction: row;
+        margin: 10em 0;
+        &__about{
+            width: 40%;
+            margin: 0 40px 0;
+        }
+        &__img{
+            width: 50%;
+
+            & img{
+                width: 80%;
+            }
+        }
+        &__title{
+            font-size: 50px;
+            line-height: 50px;
+        }
+    }
+    .offers__offer{
+        width: 24%;
+        min-width: 300px;
+    }
+    .wrapImgAndLandscape{
+        display: flex;
+        flex-direction: row;
+        margin: 0 1em;
+        justify-content: space-between;
+    }
+    .imgOffers{
+        width: 50%;
+    }
+    .offers__flex-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-bottom: 5em;
+    }
+    .offers__offer--info{
+        width: 100%;
+    }
+    .offer__wave-bottom-img{
+        bottom: 0;
+    }
+    .contact{
+        font-size: 120%;
+    }
+    .offer__title{
+        padding-top: 5em;
+    }
+    .main{
+        width: 80%;
+        margin: 0 auto;
+    }
+}

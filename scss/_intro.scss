@@ -1,5 +1,7 @@
 
 .intro{
+    display: flex;
+    flex-direction: column;
     &__about{
         margin: 2em;
         color: $secondary-color;
@@ -18,8 +20,9 @@
         justify-content:center ;
         align-items: center;
         & img{
-            width: 100%;
+            width: 50%;
         }
     }
 }
+
 
