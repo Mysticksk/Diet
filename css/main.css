@@ -634,6 +634,10 @@
   font-size: .8rem;
 }
 
+.footer__social-link {
+  color: white;
+}
+
 @media (orientation: landscape) {
   .intro__img {
     -webkit-box-ordinal-group: 0;
