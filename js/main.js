@@ -11,6 +11,7 @@ menu.addEventListener('click', () => {
 
 menuLink.forEach(el => el.addEventListener('click', function () {
     nav.classList.remove('change')
+    menu.classList.toggle('hamburger--active');
 }))
 
 readMore.addEventListener('click', () => {
