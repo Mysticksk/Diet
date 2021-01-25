@@ -1,16 +1,22 @@
 const menu = document.querySelector('.hamburger');
-const nav = document.querySelector('.sidebar')
-const readMore = document.querySelector('.btn')
-const showMore = document.querySelector('.intro__more-info')
+const nav = document.querySelector('.sidebar');
+const readMore = document.querySelector('.btn');
+const showMore = document.querySelector('.intro__more-info');
+const menuLink = document.querySelectorAll('.menu__link');
 
 menu.addEventListener('click', () => {
     menu.classList.toggle('hamburger--active');
     nav.classList.toggle('change');
 });
 
-readMore.addEventListener('click', () =>{
-    showMore.classList.toggle('show-more')
+menuLink.forEach(el => el.addEventListener('click', function () {
+    nav.classList.remove('change')
+}))
+
+readMore.addEventListener('click', () => {
+    showMore.classList.toggle('show-more');
 });
+
 
 $('div[data-scroll]').click(function (e) {
     e.preventDefault();
